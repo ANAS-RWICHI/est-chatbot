@@ -1,0 +1,24 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Trained Model
+trained_model.pth
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Environment variables
+.env
+
+# System files
+.DS_Store
+Thumbs.db

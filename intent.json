@@ -1,0 +1,439 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Bonjour",
+        "Salut",
+        "Hello",
+        "Bonsoir",
+        "Coucou",
+        "Hey",
+        "Salut tout le monde",
+        "Bonjour chatbot",
+        "Salam",
+        "Salam Alaykoum",
+        "Hi EST Bot",
+        "Bonne journée",
+        "Bonjour EST Fès"
+      ],
+      "responses": [
+        "Bonjour ! Comment puis‑je vous aider aujourd'hui ?",
+        "Salut ! Que voulez‑vous savoir sur l'EST Fès ?",
+        "Hello ! Je suis là pour répondre à vos questions.",
+        "Salam ! Je suis le chatbot de l'EST Fès, comment puis-je vous aider ?",
+        "Bonjour ! Je peux vous renseigner sur les formations, l'admission, les stages et plus encore."
+      ]
+    },
+    {
+      "tag": "au_revoir",
+      "patterns": [
+        "Au revoir",
+        "Bye",
+        "À plus",
+        "À la prochaine",
+        "Ciao",
+        "A bientôt",
+        "Je pars",
+        "Bonne journée",
+        "Bonne soirée",
+        "On se reparle plus tard",
+        "Adieu",
+        "Merci, au revoir",
+        "Je te laisse",
+        "Fin de discussion",
+        "See you",
+        "Tchao",
+        "Je quitte",
+        "Terminé",
+        "Je reviendrai plus tard",
+        "On se voit plus tard"
+      ],
+      "responses": [
+        "Au revoir ! N'hésitez pas à revenir si vous avez d'autres questions.",
+        "À bientôt ! Bonne continuation."
+      ]
+    },
+    {
+      "tag": "presentation_est",
+      "patterns": [
+        "Qu'est-ce que l'EST Fès ?",
+        "Présentez votre école",
+        "Histoire de l'EST-USMBA",
+        "Quelle est la mission de l'EST ?",
+        "Qui a fondé l'école ?",
+        "C'est quoi l'EST ?",
+        "Donnez-moi des infos sur votre établissement",
+        "Quel est le rôle de l'EST ?",
+        "Quand a été créée l'EST Fès ?",
+        "Pouvez-vous me parler de l'EST de Fès ?",
+        "Expliquez-moi ce qu'est l'EST-USMBA",
+        "Présentation générale de votre école",
+        "Parlez-moi un peu de l’EST",
+        "Je veux connaître l'histoire de l'EST",
+        "Quelle est la vision de votre établissement ?",
+        "D'où vient l'EST Fès ?",
+        "Votre école a été fondée quand ?",
+        "Que fait l’EST exactement ?",
+        "Quels sont les objectifs de votre école ?",
+        "Parlez-moi de la fondation de l'EST"
+      ],
+
+      "responses": [
+        "L'École Supérieure de Technologie de Fès (EST-USMBA) est un établissement public fondé en 1986 sous la tutelle du Ministère de l'Enseignement Supérieur. Notre mission : former des techniciens supérieurs hautement qualifiés dans divers domaines technologiques. <a href='http://www.est-usmba.ac.ma/page/historique' target='_blank'>En savoir plus</a>"
+      ],
+      "context": ["accueil", "presentation"]
+    },
+    {
+      "tag": "formations_dut",
+      "patterns": [
+        "Quelles filières DUT proposez-vous ?",
+        "Liste des diplômes technologiques",
+        "Quelles sont les spécialités en DUT ?",
+        "Je veux connaître les options en génie",
+        "Quels DUT avez-vous ?",
+        "Quelles sont les branches disponibles à l’EST ?",
+        "Quels sont les parcours DUT ?",
+        "Quels départements de formation avez-vous ?",
+        "Donnez-moi la liste des DUT",
+        "Quels sont les domaines de formation ?",
+        "Quels sont les choix possibles pour un DUT ?",
+        "Y a-t-il un DUT en informatique ?",
+        "Y a-t-il des options en génie industriel ?",
+        "Quels DUT sont disponibles à l'EST Fès ?",
+        "Que peut-on étudier en DUT chez vous ?",
+        "Quels sont vos programmes technologiques ?",
+        "Est-ce que vous proposez un DUT en électricité ?",
+        "Quels diplômes technologiques offrez-vous ?",
+        "Je veux m’inscrire en DUT, quelles options ?",
+        "Quels DUT en logistique ou informatique ?"
+      ],
+      "responses": [
+        "Nous proposons 7 filières DUT :\n- Génie Logiciel\n- Génie Industriel\n- Génie Électrique\n- Génie Mécanique\n- Génie des Procédés\n- Génie des Réseaux & Sécurité\n- Génie de la Gestion & Logistique\n\n<a href='http://www.est-usmba.ac.ma/' target='_blank'>Détails des programmes</a>"
+      ],
+      "keywords": ["DUT", "filières", "diplôme"]
+    },
+    {
+      "tag": "licence_pro",
+      "patterns": [
+        "Quelles licences pro sont disponibles ?",
+        "Licence professionnelle à l'EST ?",
+        "Formation licence pro ?",
+        "Liste des LP ?",
+        "Quels LP proposez-vous ?",
+        "Donnez-moi les licences pro",
+        "Les licences professionnelles ?",
+        "Quel type de licence pro ?",
+        "Les filières LP ?",
+        "LP EST Fès ?",
+        "LP disponibles ?",
+        "Programmes LP ?",
+        "Je veux une licence pro",
+        "Y a-t-il des LP ?",
+        "Spécialités de licence pro ?",
+        "Formation LP à Fès ?",
+        "LP en informatique ?",
+        "Licence pro réseaux ?",
+        "Licence pro mécanique ?",
+        "Licence pro électrique ?"
+      ],
+      "responses": [
+        "L’EST Fès propose plusieurs licences professionnelles dans les domaines de l'informatique, réseaux, génie électrique, mécanique, et gestion. Consultez le site pour plus de détails."
+      ]
+    },
+    {
+      "tag": "admission_2024",
+      "patterns": [
+        "Comment s'inscrire pour 2024 ?",
+        "Quelles sont les conditions d'admission ?",
+        "Dates limites d'inscription",
+        "Quand commencent les inscriptions ?",
+        "Quels documents fournir ?",
+        "Comment postuler à l’EST pour l’année 2024 ?",
+        "Quels sont les prérequis pour l’admission ?",
+        "Quels papiers faut-il pour s’inscrire ?",
+        "Y a-t-il une date limite pour l’inscription ?",
+        "Je veux m’inscrire, comment faire ?",
+        "Quelles sont les étapes pour s’inscrire à l’EST Fès ?",
+        "Quand peut-on envoyer sa candidature ?",
+        "Quels sont les critères d’admission à l’EST ?",
+        "Quand débute la campagne d’inscription ?",
+        "Quels dossiers dois-je préparer pour 2024 ?",
+        "Les inscriptions sont-elles ouvertes ?",
+        "Comment intégrer votre école en 2024 ?",
+        "Quel est le dernier délai pour s’inscrire ?",
+        "Quelles sont les modalités d’admission à l'EST Fès ?",
+        "Peut-on s'inscrire en ligne ?"
+      ],
+      "responses": [
+        "📅 Calendrier 2024 :\n- Ouverture des inscriptions : 1er juin\n- Clôture : 15 juillet\n\n📋 Conditions :\n- DUT : Baccalauréat scientifique\n- Licence Pro : Bac+2\n\n📌 <a href='http://www.est-usmba.ac.ma/page/admission' target='_blank'>Portail d'admission</a>"
+      ],
+      "entities": {
+        "dates": ["2024-06-01", "2024-07-15"],
+        "documents": ["BAC", "relevés de notes", "photo d'identité"]
+      }
+    },
+    {
+      "tag": "international",
+      "patterns": [
+        "Avez-vous des partenariats internationaux ?",
+        "Programmes d'échange étudiants",
+        "Erasmus à l'EST",
+        "Universités partenaires à l'étranger",
+        "Puis-je faire un échange international à l'EST ?",
+        "Est-ce que vous êtes en partenariat avec d'autres universités ?",
+        "Y a-t-il un programme Erasmus+ ?",
+        "Proposez-vous des échanges avec l'Europe ?",
+        "Avec quels pays travaillez-vous pour les échanges ?",
+        "Est-ce que je peux partir à l'étranger avec l’EST ?",
+        "Y a-t-il des accords avec des universités étrangères ?",
+        "Est-ce que des étudiants vont à l’étranger chaque année ?",
+        "Avez-vous des relations internationales ?",
+        "Quels sont vos partenaires étrangers ?",
+        "Quelles universités collaborent avec l'EST à l'échelle internationale ?",
+        "Puis-je postuler à un programme international en étant à l’EST ?",
+        "Quels sont les pays partenaires de votre école ?",
+        "Quelles sont les opportunités de mobilité internationale ?",
+        "Avez-vous des conventions avec des établissements étrangers ?",
+        "Est-ce qu’un étudiant peut faire une année à l’étranger ?"
+      ],
+      "responses": [
+        "🌍 Partenariats internationaux :\n- France : Université de Lorraine\n- Tunisie : INSAT\n- Europe : Programmes Erasmus+ (Malte, Bulgarie, Italie)\n- Canada : Université de Sherbrooke\n\n<a href='http://www.est-usmba.ac.ma/page/relations-internationales' target='_blank'>Voir toutes les collaborations</a>"
+      ]
+    },
+    {
+      "tag": "vie_etudiante",
+      "patterns": [
+        "Activités pour étudiants",
+        "Clubs universitaires",
+        "Événements culturels",
+        "Installations sportives",
+        "Quelles activités proposez-vous aux étudiants ?",
+        "Quels sont les clubs disponibles à l’EST ?",
+        "Y a-t-il des événements pour les étudiants ?",
+        "Est-ce qu’il y a des activités extrascolaires ?",
+        "Je veux rejoindre un club universitaire",
+        "Y a-t-il des compétitions ou des festivals à l’EST ?",
+        "Puis-je faire du sport à l’école ?",
+        "Est-ce que vous organisez des événements culturels ?",
+        "Quelles animations sont proposées aux étudiants ?",
+        "Que fait le BDE ?",
+        "Y a-t-il des activités sportives ?",
+        "Je veux participer à la vie étudiante, comment faire ?",
+        "Quels sont les espaces pour les loisirs à l’EST ?",
+        "Avez-vous des clubs artistiques ou scientifiques ?",
+        "Comment intégrer un club à l’EST ?",
+        "Y a-t-il une salle de sport dans l’école ?"
+      ],
+      "responses": [
+        "🏫 Vie étudiante :\n- Clubs : Robotique, Débat, Théâtre\n- Sports : Piste athlétique, Salle de musculation\n- Événements : Semaine culturelle, Compétitions technologiques\n\n📍 Lieux : BDE, Complexe sportif, Salle polyvalente"
+      ]
+    },
+    {
+      "tag": "facilites",
+      "patterns": [
+        "Quelles sont les facilités ?",
+        "Infrastructures ?",
+        "Bibliothèque ?",
+        "Wi-Fi disponible ?",
+        "Accès internet ?",
+        "Salles informatiques ?",
+        "Locaux ?",
+        "Installations sportives ?",
+        "Cantine ?",
+        "Cafétéria ?",
+        "Espaces étudiants ?",
+        "Laboratoires ?",
+        "Salle de repos ?",
+        "Est-ce qu’il y a des PC ?",
+        "Salle de conférence ?",
+        "Parking ?",
+        "Facilités pour étudiants ?",
+        "Matériel à disposition ?",
+        "Salle de travail ?",
+        "Accès handicapé ?"
+      ],
+      "responses": [
+        "L’EST Fès dispose de plusieurs facilités : bibliothèque, laboratoires, salles informatiques, Wi-Fi, cafétéria, et espaces de travail pour les étudiants."
+      ]
+    },
+    {
+      "tag": "contact_urgence",
+      "patterns": [
+        "Comment contacter l'EST ?",
+        "Numéro de téléphone urgent",
+        "Adresse email du secrétariat",
+        "Où se trouve votre école ?",
+        "Quel est le contact de l'administration ?",
+        "Avez-vous un numéro de téléphone ?",
+        "Comment vous joindre ?",
+        "Quels sont vos moyens de contact ?",
+        "Je cherche l’adresse de l’EST Fès",
+        "Comment vous contacter rapidement ?",
+        "Y a-t-il un email pour le secrétariat ?",
+        "Où est située l’école ?",
+        "C’est quoi votre numéro fixe ?",
+        "Quelle est l’adresse postale de l’établissement ?",
+        "Puis-je avoir vos coordonnées ?",
+        "Je veux téléphoner à l’EST",
+        "Comment écrire à l’administration ?",
+        "Où puis-je trouver vos contacts ?",
+        "Je cherche la localisation de l’école",
+        "Quels sont vos horaires de contact ?"
+      ],
+      "responses": [
+        "📞 Contacts urgents :\n- Standard : +212 535 601 700\n- Scolarité : scolarite.est@usmba.ac.ma\n- Direction : direction.est@usmba.ac.ma\n\n📍 Adresse : Route d'Imouzzer, BP 2427 Fès\n🗺️ <a href='https://goo.gl/maps/XYZ123' target='_blank'>Localisation Google Maps</a>"
+      ],
+      "priority": 1
+    },
+    {
+      "tag": "plateforme_elearning",
+      "patterns": [
+        "Comment accéder à Moodle ?",
+        "Problème de connexion à la plateforme",
+        "Où trouver les cours en ligne ?",
+        "Identifiants E-learning",
+        "Je n’arrive pas à me connecter à Moodle",
+        "Comment se connecter à la plateforme E-learning ?",
+        "Lien vers la plateforme de cours",
+        "Accès aux cours en ligne",
+        "Mot de passe oublié sur Moodle",
+        "C’est quoi l’URL de la plateforme E-learning ?",
+        "Je ne trouve pas mes cours en ligne",
+        "Où est la plateforme E-learning de l’EST ?",
+        "Je veux accéder à mes cours Moodle",
+        "J’ai un souci avec mon compte E-learning",
+        "Comment récupérer mes identifiants de connexion ?",
+        "Connexion impossible à Moodle",
+        "Besoin d’aide pour la plateforme en ligne",
+        "Comment activer mon compte sur Moodle ?",
+        "Mes identifiants ne fonctionnent pas",
+        "Problème d'accès à l'espace étudiant en ligne"
+      ],
+      "responses": [
+        "💻 Plateforme E-learning :\n🔗 <a href='https://elearn.est-usmba.ac.ma' target='_blank'>elearn.est-usmba.ac.ma</a>\n🔑 Identifiants :\n- Login : Votre email EST\n- Mot de passe : Votre CIN initial\n\n🛠️ Support : support-elearning@est-usmba.ac.ma"
+      ]
+    },
+    {
+      "tag": "recherche_laboratoires",
+      "patterns": [
+        "Quels laboratoires de recherche ?",
+        "Projets scientifiques en cours",
+        "Domaines de recherche prioritaires",
+        "Comment rejoindre un labo ?",
+        "Quels sont les labos à l’EST ?",
+        "Quels types de recherche sont menés à l’EST ?",
+        "Est-ce que je peux intégrer un laboratoire ?",
+        "Liste des laboratoires de recherche",
+        "Y a-t-il des projets scientifiques en cours ?",
+        "Quels sont vos axes de recherche ?",
+        "Dans quels domaines faites-vous de la recherche ?",
+        "Quelles thématiques de recherche sont développées ?",
+        "Comment faire un stage dans un labo ?",
+        "Quels laboratoires travaillent sur l’intelligence artificielle ?",
+        "Puis-je participer à un projet scientifique ?",
+        "Quels laboratoires recrutent des étudiants ?",
+        "Quels sont les principaux pôles de recherche ?",
+        "Quelles innovations sont développées à l’EST ?",
+        "Y a-t-il des équipes de recherche actives ?",
+        "Comment faire partie d’un groupe de recherche ?"
+      ],
+      "responses": [
+        "🔬 Laboratoires de recherche :\n- LTSI : Systèmes d'Information\n- LMPCE : Matériaux et Procédés\n- LSIG : Génie Industriel\n\n💡 Axes de recherche : IA, Biotechnologies, Énergies Renouvelables\n\n<a href='http://www.est-usmba.ac.ma/page/recherche' target='_blank'>Découvrez nos projets</a>"
+      ]
+    },
+    {
+      "tag": "emploi_stages",
+      "patterns": [
+        "Offres de stage",
+        "Comment trouver un emploi après l'EST ?",
+        "Partenariats avec les entreprises",
+        "Forum de recrutement",
+        "Y a-t-il une plateforme pour les stages ?",
+        "Est-ce que vous aidez les étudiants à trouver un stage ?",
+        "Quels sont vos partenaires pour l'insertion professionnelle ?",
+        "Comment obtenir un stage via l’EST ?",
+        "Avez-vous des relations avec des entreprises ?",
+        "Existe-t-il un service pour les stages à l’EST ?",
+        "Y a-t-il des entreprises partenaires pour le recrutement ?",
+        "Organisez-vous des journées de l’emploi ?",
+        "Comment l’EST aide à trouver un emploi ?",
+        "Avez-vous une bourse des stages ?",
+        "Quels sont les débouchés après l’EST ?",
+        "Quels sont les secteurs qui recrutent vos diplômés ?",
+        "Puis-je postuler à un stage via votre école ?",
+        "Quelles sont les offres d'emploi pour les diplômés ?",
+        "Comment participer au forum entreprises ?",
+        "Est-ce que l’EST collabore avec le secteur industriel ?"
+      ],
+      "responses": [
+        "💼 Opportunités professionnelles :\n- Plateforme de stages : <a href='http://stage.est-usmba.ac.ma' target='_blank'>stage.est-usmba.ac.ma</a>\n- Forum annuel : Rencontres Entreprises (mars)\n- Partenaires : OCP, Maroc Telecom, Renault\n\n📌 Service insertion : insertion@est-usmba.ac.ma"
+      ]
+    },
+    {
+      "tag": "actualites",
+      "patterns": [
+        "Quelles sont les dernières nouvelles ?",
+        "Événements à venir",
+        "Annonces importantes",
+        "Journées portes ouvertes",
+        "Y a-t-il des événements bientôt ?",
+        "C’est quoi l’actualité à l’EST ?",
+        "Quelles sont les infos récentes ?",
+        "Avez-vous publié des annonces ?",
+        "Quels sont les événements programmés ?",
+        "Je veux connaître les dernières nouvelles de l'école",
+        "Est-ce qu’il y a des conférences bientôt ?",
+        "Les inscriptions sont-elles encore ouvertes ?",
+        "Avez-vous une rubrique actualités ?",
+        "Quels événements sont prévus ce mois-ci ?",
+        "Des journées portes ouvertes sont-elles prévues ?",
+        "Quelles sont les dates importantes à venir ?",
+        "Est-ce qu’il y a une semaine culturelle bientôt ?",
+        "Quels sont les prochains rendez-vous à l’EST ?",
+        "Puis-je consulter les annonces en ligne ?",
+        "Y a-t-il une actualité récente à ne pas manquer ?"
+      ],
+      "responses": [
+        "📢 Actualités récentes :\n- 15/06 : Portes ouvertes virtuelles\n- 20/06 : Conférence sur l'IA\n- 01/07 : Clôture des inscriptions\n\nConsultez toutes les actualités : <a href='http://www.est-usmba.ac.ma/actualites' target='_blank'>Page Actualités</a>"
+      ]
+    },
+    {
+      "tag": "createur",
+      "patterns": [
+        "Qui t'a créé ?",
+        "Qui est ton créateur ?",
+        "Par qui as-tu été conçu ?",
+        "Tu as été développé par qui ?",
+        "Qui est à l’origine de ce bot ?",
+        "Développeur du chatbot ?",
+        "Ton créateur ?",
+        "Bot développé par ?",
+        "Qui a codé ce chatbot ?",
+        "Créé par qui ?",
+        "Tu es de qui ?",
+        "Qui sont tes auteurs ?",
+        "Qui est derrière ce projet ?",
+        "Auteurs du chatbot ?",
+        "Tu viens d’où ?",
+        "Qui t’a programmé ?",
+        "Qui a construit ce bot ?",
+        "Bot par qui ?",
+        "Tes créateurs ?",
+        "Yassine Tibari et Anas Rwchi ?"
+      ],
+      "responses": [
+        "Je suis un chatbot développé par Yassine Tibari et Anas Rwichi. Bravo à eux pour leur travail !"
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [],
+      "responses": [
+        "Je n'ai pas compris votre demande. Pouvez-vous reformuler ?",
+        "Pour une assistance immédiate, contactez-nous au +212 535 601 700",
+        "Visitez notre site officiel : <a href='http://www.est-usmba.ac.ma' target='_blank'>www.est-usmba.ac.ma</a>"
+      ]
+    }
+  ]
+}
